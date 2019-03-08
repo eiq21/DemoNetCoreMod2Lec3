@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Entities", "NorthWind.Entities\NorthWind.Entities.csproj", "{48AC5AD3-3CF1-48FD-9A49-DA8C096E8B09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.Entities", "NorthWind.Entities\NorthWind.Entities.csproj", "{48AC5AD3-3CF1-48FD-9A49-DA8C096E8B09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Data", "NorthWind.Data\NorthWind.Data.csproj", "{9BA5CA7D-259F-472C-9F83-F82F787CEDD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.Data", "NorthWind.Data\NorthWind.Data.csproj", "{9BA5CA7D-259F-472C-9F83-F82F787CEDD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Services", "NorthWind.Services\NorthWind.Services.csproj", "{268B4171-F5EE-463B-B0BF-A29E835F0B8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.Services", "NorthWind.Services\NorthWind.Services.csproj", "{268B4171-F5EE-463B-B0BF-A29E835F0B8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Helpers", "NorthWind.Helpers\NorthWind.Helpers.csproj", "{8E417790-D410-4DDB-82A3-648F5E791054}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.Helpers", "NorthWind.Helpers\NorthWind.Helpers.csproj", "{8E417790-D410-4DDB-82A3-648F5E791054}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.BusinessLogic", "NorthWind.BusinessLogic\NorthWind.BusinessLogic.csproj", "{5D1D2297-3ACE-4540-A6C4-23B4356EAA09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.BusinessLogic", "NorthWind.BusinessLogic\NorthWind.BusinessLogic.csproj", "{5D1D2297-3ACE-4540-A6C4-23B4356EAA09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Migrations", "NorthWind.Migrations\NorthWind.Migrations.csproj", "{81AFF1F6-DED7-4684-97FC-D4A6B0077926}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.Migrations", "NorthWind.Migrations\NorthWind.Migrations.csproj", "{81AFF1F6-DED7-4684-97FC-D4A6B0077926}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Web", "NorthWind.Web\NorthWind.Web.csproj", "{38F945C1-45D9-404F-AFC8-DEC6CC0DE945}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.Web", "NorthWind.Web\NorthWind.Web.csproj", "{38F945C1-45D9-404F-AFC8-DEC6CC0DE945}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
