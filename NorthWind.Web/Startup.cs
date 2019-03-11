@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using NorthWind.Services;
+
 
 namespace NorthWind.Web
 {
@@ -33,6 +35,9 @@ namespace NorthWind.Web
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddSingleton(typeof(ICategoryOperations), f => BusinessLogic.OperationsFactory.GetCategoryOperations());
+            services.AddSingleton(typeof(ILogOperations), f => BusinessLogic.OperationsFactory.GetlogOperations());
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
