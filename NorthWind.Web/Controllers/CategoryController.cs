@@ -17,13 +17,17 @@ namespace NorthWind.Web.Controllers
             this._categoryOperations = categoryOperations;
         }
 
-        public IActionResult Create(string name, string description)
+        public IActionResult Create() {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Create([FromForm] Category category)
         {
-            Category category = new Category()
-            {
-                CategoryName = name,
-                Description = description
-            };
+            //Category category = new Category()
+            //{
+            //    CategoryName = name,
+            //    Description = description
+            //};
 
             category = _categoryOperations.Create(category);
 
@@ -43,8 +47,8 @@ namespace NorthWind.Web.Controllers
             return (result) ? Content("Categoría modificada") : Content("No se actualizó la categoria");
         }
 
-        public IActionResult Delete(int categoryID,bool withLog = false) {
-            var result = (withLog) ? _categoryOperations.DeleteWithLog(categoryID) : _categoryOperations.Delete(categoryID);
+        public IActionResult Delete(int id,bool withLog = false) {
+            var result = (withLog) ? _categoryOperations.DeleteWithLog(id) : _categoryOperations.Delete(id);
             return (result) ? Content("Categoria eliminada") : Content("No se puedo eliminar la categoría");
         }
 
@@ -55,7 +59,7 @@ namespace NorthWind.Web.Controllers
         public IActionResult Index()
         {
 
-            return View();
+            return View(_categoryOperations.GetAll());
         }
 
     }

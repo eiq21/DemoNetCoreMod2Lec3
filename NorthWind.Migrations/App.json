@@ -1,0 +1,4 @@
+{
+  "DataBaseProvider": "UserSqlServer",
+  "ConnectionString": "Server = (localdb)\\mssqllocaldb;Database=NorthWind;Trusted_Connection=True;"
+}

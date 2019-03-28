@@ -33,9 +33,9 @@ namespace NorthWind.Data
             return log;
         }
 
-        public bool Delete(int categoryID)
+        public bool Delete(int CategoryID)
         {
-            context.Remove(new Category() { CategoryID = categoryID });
+            context.Remove(new Category() { CategoryID = CategoryID });
             return Save();
         }
 
